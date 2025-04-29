@@ -30,9 +30,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DF7E2FB42DC0FB0700CC8725 /* Bevia */ = {
+		DF7E2FB42DC0FB0700CC8725 /* BeviaApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Bevia;
+			path = BeviaApp;
 			sourceTree = "<group>";
 		};
 		DF7E2FC42DC0FB0A00CC8725 /* BeviaTests */ = {
@@ -75,7 +75,7 @@
 		DF7E2FA92DC0FB0700CC8725 = {
 			isa = PBXGroup;
 			children = (
-				DF7E2FB42DC0FB0700CC8725 /* Bevia */,
+				DF7E2FB42DC0FB0700CC8725 /* BeviaApp */,
 				DF7E2FC42DC0FB0A00CC8725 /* BeviaTests */,
 				DF7E2FCE2DC0FB0A00CC8725 /* BeviaUITests */,
 				DF7E2FB32DC0FB0700CC8725 /* Products */,
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DF7E2FB42DC0FB0700CC8725 /* Bevia */,
+				DF7E2FB42DC0FB0700CC8725 /* BeviaApp */,
 			);
 			name = Bevia;
 			packageProductDependencies = (
@@ -400,6 +400,7 @@
 				DEVELOPMENT_TEAM = ML54V9VDD3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +429,7 @@
 				DEVELOPMENT_TEAM = ML54V9VDD3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
