@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		DF7E2FC22DC0FB0A00CC8725 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF7E2FAA2DC0FB0700CC8725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF7E2FB12DC0FB0700CC8725;
+			remoteInfo = Bevia;
+		};
+		DF7E2FCC2DC0FB0A00CC8725 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF7E2FAA2DC0FB0700CC8725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF7E2FB12DC0FB0700CC8725;
+			remoteInfo = Bevia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF7E2FB22DC0FB0700CC8725 /* Bevia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bevia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7E2FC12DC0FB0A00CC8725 /* BeviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeviaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7E2FCB2DC0FB0A00CC8725 /* BeviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeviaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DF7E2FB42DC0FB0700CC8725 /* Bevia */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Bevia;
+			sourceTree = "<group>";
+		};
+		DF7E2FC42DC0FB0A00CC8725 /* BeviaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BeviaTests;
+			sourceTree = "<group>";
+		};
+		DF7E2FCE2DC0FB0A00CC8725 /* BeviaUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BeviaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF7E2FAF2DC0FB0700CC8725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7E2FBE2DC0FB0A00CC8725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7E2FC82DC0FB0A00CC8725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF7E2FA92DC0FB0700CC8725 = {
+			isa = PBXGroup;
+			children = (
+				DF7E2FB42DC0FB0700CC8725 /* Bevia */,
+				DF7E2FC42DC0FB0A00CC8725 /* BeviaTests */,
+				DF7E2FCE2DC0FB0A00CC8725 /* BeviaUITests */,
+				DF7E2FB32DC0FB0700CC8725 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF7E2FB32DC0FB0700CC8725 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF7E2FB22DC0FB0700CC8725 /* Bevia.app */,
+				DF7E2FC12DC0FB0A00CC8725 /* BeviaTests.xctest */,
+				DF7E2FCB2DC0FB0A00CC8725 /* BeviaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF7E2FB12DC0FB0700CC8725 /* Bevia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7E2FD52DC0FB0A00CC8725 /* Build configuration list for PBXNativeTarget "Bevia" */;
+			buildPhases = (
+				DF7E2FAE2DC0FB0700CC8725 /* Sources */,
+				DF7E2FAF2DC0FB0700CC8725 /* Frameworks */,
+				DF7E2FB02DC0FB0700CC8725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DF7E2FB42DC0FB0700CC8725 /* Bevia */,
+			);
+			name = Bevia;
+			packageProductDependencies = (
+			);
+			productName = Bevia;
+			productReference = DF7E2FB22DC0FB0700CC8725 /* Bevia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF7E2FC02DC0FB0A00CC8725 /* BeviaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7E2FD82DC0FB0A00CC8725 /* Build configuration list for PBXNativeTarget "BeviaTests" */;
+			buildPhases = (
+				DF7E2FBD2DC0FB0A00CC8725 /* Sources */,
+				DF7E2FBE2DC0FB0A00CC8725 /* Frameworks */,
+				DF7E2FBF2DC0FB0A00CC8725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF7E2FC32DC0FB0A00CC8725 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DF7E2FC42DC0FB0A00CC8725 /* BeviaTests */,
+			);
+			name = BeviaTests;
+			packageProductDependencies = (
+			);
+			productName = BeviaTests;
+			productReference = DF7E2FC12DC0FB0A00CC8725 /* BeviaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF7E2FCA2DC0FB0A00CC8725 /* BeviaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7E2FDB2DC0FB0A00CC8725 /* Build configuration list for PBXNativeTarget "BeviaUITests" */;
+			buildPhases = (
+				DF7E2FC72DC0FB0A00CC8725 /* Sources */,
+				DF7E2FC82DC0FB0A00CC8725 /* Frameworks */,
+				DF7E2FC92DC0FB0A00CC8725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF7E2FCD2DC0FB0A00CC8725 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DF7E2FCE2DC0FB0A00CC8725 /* BeviaUITests */,
+			);
+			name = BeviaUITests;
+			packageProductDependencies = (
+			);
+			productName = BeviaUITests;
+			productReference = DF7E2FCB2DC0FB0A00CC8725 /* BeviaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF7E2FAA2DC0FB0700CC8725 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					DF7E2FB12DC0FB0700CC8725 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					DF7E2FC02DC0FB0A00CC8725 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = DF7E2FB12DC0FB0700CC8725;
+					};
+					DF7E2FCA2DC0FB0A00CC8725 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = DF7E2FB12DC0FB0700CC8725;
+					};
+				};
+			};
+			buildConfigurationList = DF7E2FAD2DC0FB0700CC8725 /* Build configuration list for PBXProject "Bevia" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF7E2FA92DC0FB0700CC8725;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DF7E2FB32DC0FB0700CC8725 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF7E2FB12DC0FB0700CC8725 /* Bevia */,
+				DF7E2FC02DC0FB0A00CC8725 /* BeviaTests */,
+				DF7E2FCA2DC0FB0A00CC8725 /* BeviaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF7E2FB02DC0FB0700CC8725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7E2FBF2DC0FB0A00CC8725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7E2FC92DC0FB0A00CC8725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF7E2FAE2DC0FB0700CC8725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7E2FBD2DC0FB0A00CC8725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7E2FC72DC0FB0A00CC8725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF7E2FC32DC0FB0A00CC8725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF7E2FB12DC0FB0700CC8725 /* Bevia */;
+			targetProxy = DF7E2FC22DC0FB0A00CC8725 /* PBXContainerItemProxy */;
+		};
+		DF7E2FCD2DC0FB0A00CC8725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF7E2FB12DC0FB0700CC8725 /* Bevia */;
+			targetProxy = DF7E2FCC2DC0FB0A00CC8725 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF7E2FD32DC0FB0A00CC8725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ML54V9VDD3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF7E2FD42DC0FB0A00CC8725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ML54V9VDD3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF7E2FD62DC0FB0A00CC8725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML54V9VDD3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheh.Bevia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF7E2FD72DC0FB0A00CC8725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML54V9VDD3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheh.Bevia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF7E2FD92DC0FB0A00CC8725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML54V9VDD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheh.BeviaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bevia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bevia";
+			};
+			name = Debug;
+		};
+		DF7E2FDA2DC0FB0A00CC8725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML54V9VDD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheh.BeviaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bevia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bevia";
+			};
+			name = Release;
+		};
+		DF7E2FDC2DC0FB0A00CC8725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML54V9VDD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheh.BeviaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bevia;
+			};
+			name = Debug;
+		};
+		DF7E2FDD2DC0FB0A00CC8725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ML54V9VDD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheh.BeviaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bevia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF7E2FAD2DC0FB0700CC8725 /* Build configuration list for PBXProject "Bevia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7E2FD32DC0FB0A00CC8725 /* Debug */,
+				DF7E2FD42DC0FB0A00CC8725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7E2FD52DC0FB0A00CC8725 /* Build configuration list for PBXNativeTarget "Bevia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7E2FD62DC0FB0A00CC8725 /* Debug */,
+				DF7E2FD72DC0FB0A00CC8725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7E2FD82DC0FB0A00CC8725 /* Build configuration list for PBXNativeTarget "BeviaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7E2FD92DC0FB0A00CC8725 /* Debug */,
+				DF7E2FDA2DC0FB0A00CC8725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7E2FDB2DC0FB0A00CC8725 /* Build configuration list for PBXNativeTarget "BeviaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7E2FDC2DC0FB0A00CC8725 /* Debug */,
+				DF7E2FDD2DC0FB0A00CC8725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF7E2FAA2DC0FB0700CC8725 /* Project object */;
+}
