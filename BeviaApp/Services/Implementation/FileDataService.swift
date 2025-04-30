@@ -14,8 +14,7 @@ class FileDataService: DataServiceProtocol {
             self.dataDirectory = directory
         } else {
             // Use Documents directory by default
-            let paths = FileManager.default.urls(for: .documentDirectory,
-                                                 in: .userDomainMask)
+            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
             self.dataDirectory = paths[0].appendingPathComponent(
                 "BabyTracker",isDirectory: true)
         }
@@ -61,6 +60,46 @@ class FileDataService: DataServiceProtocol {
         } catch {
             print("Error loading baby: \(error)")
             return nil
+        }
+    }
+
+    func loadAllBabies() -> [Baby] {
+        do {
+            let fileURLs = try FileManager.default.contentsOfDirectory(at: dataDirectory, includingPropertiesForKeys: nil)
+            let babyFiles = fileURLs.filter { $0.lastPathComponent.starts(with: "baby_")}
+            var babies: [Baby] = []
+
+            for fileURL in babyFiles {
+                if let baby = try? loadBaby(from: fileURL) {
+                    babies.append(baby)
+                }
+            }
+            
+            return babies.sorted(by: { $0.name < $1.name })
+        } catch {
+            print("Error loading all babies: \(error)")
+        }
+    }
+
+    private func loadBaby(from fileURL: URL) throws -> Baby? {
+        let data = try Data(contentsOf: fileURL)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        return try decoder.decode(Baby.self, from: data)
+    }
+
+    func deleteBaby(withID id: UUID) -> Bool {
+        let filePath = getBabyFilePath(id: id)
+
+        guard FileManager.default.fileExists(atPath: filePath.path) else {
+            return false
+        }
+
+        do {
+            try FileManager.default.removeItem(at: filePath)
+            return true
+        } catch {
+            print("Error deleting baby: \(error)")
         }
     }
 }
