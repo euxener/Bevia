@@ -41,7 +41,7 @@ class BabyDetailViewModel: ObservableObject {
 
         updatedBaby.name = name
         updatedBaby.birthdate = birthdate
-        updateBaby.gender = gender
+        updatedBaby.gender = gender
         updatedBaby.notes = notes
 
         if dataService.saveBaby(updatedBaby) {

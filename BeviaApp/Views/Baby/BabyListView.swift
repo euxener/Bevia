@@ -23,7 +23,7 @@ struct BabyListView: View {
 
                         Text("No babies added yet")
                         .font(.title)
-
+                        
                         Text("Tap the + button to add your baby")
                         .foregroundColor(.secondary)
 
