@@ -14,12 +14,15 @@ class FileDataService: DataServiceProtocol {
             self.dataDirectory = directory
         } else {
             // Use Documents directory by default
-            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-            self.dataDirectory = paths[0].appendingPathComponent("BabyTracker", isDirectory: true)
+            let paths = FileManager.default.urls(for: .documentDirectory,
+                                                 in: .userDomainMask)
+            self.dataDirectory = paths[0].appendingPathComponent(
+                "BabyTracker",isDirectory: true)
         }
 
         // Create directory if it doesn't exist
-        try? FileManager.default.createDirectory(at: dataDirectory, withIntermediateDirectories: true)
+        try? FileManager.default.createDirectory(
+            at: dataDirectory,withIntermediateDirectories: true)
     }
 
     // MARK: - Helper methods
@@ -37,10 +40,13 @@ class FileDataService: DataServiceProtocol {
             let data = try encoder.encode(baby)
             try data.write(to: getBabyFilePath(id: baby.id))
             return true
+        } catch {
+            print("Error saving baby: \(error)")
+            return false
         }
     }
 
-    func loadBaby(withID: UUID) -> Baby? {
+    func loadBaby(withID id: UUID) -> Baby? {
         let filePath = getBabyFilePath(id: id)
 
         guard FileManager.default.fileExists(atPath: filePath.path) else {

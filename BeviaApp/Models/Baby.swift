@@ -13,7 +13,8 @@ struct Baby: Identifiable, Codable {
     var gender: String?
     var notes: String?
 
-    init(id: UUID = UUID(), name: String, birthdate: Date, gender: String? = nil, notes: String? = nil) {
+    init(id: UUID = UUID(), name: String, birthdate: Date,
+         gender: String? = nil, notes: String? = nil) {
         self.id = id
         self.name = name
         self.birthdate = birthdate
@@ -21,9 +22,12 @@ struct Baby: Identifiable, Codable {
         self.notes = notes
     }
 
-    func calculateAge(asOf date: Date = Date()) -> (years: Int, months: Int, days: Int) {
+    func calculateAge(asOf date: Date = Date()) -> (years: Int,
+                                                    months: Int, days: Int)
+    {
         let calendar = Calendar.current
-        let components = calendar.dateComponents([.year, .month, .day], from: birthdate, to:date)
+        let components = calendar.dateComponents([.year, .month, .day],
+                                                 from: birthdate, to: date)
         return (
             years: components.year ?? 0,
             months: components.month ?? 0,
