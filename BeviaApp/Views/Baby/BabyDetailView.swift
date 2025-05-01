@@ -62,7 +62,7 @@ struct BabyDetailView : View {
                                 InfoCard(title: "Notes", content: [(nil, notes)])
                             }
 
-                            Space()
+                            Spacer()
                         }
                         .padding()
                         .tag(0)

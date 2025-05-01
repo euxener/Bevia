@@ -6,7 +6,7 @@ extension FileDataService {
     // MARK: - Helper methods for GrowthRecord
 
     private func getGrowthRecordDirectory(babyId: UUID) -> URL {
-        return dataDirectory.appendingPathComponent("baby_\(babyUd.uuidString)_growth", isDirectory: true)
+        return dataDirectory.appendingPathComponent("baby_\(babyId.uuidString)_growth", isDirectory: true)
     }
 
     private func getGrowthRecordPath(babyId: UUID, recordId: UUID) -> URL {

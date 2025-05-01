@@ -78,6 +78,7 @@ class FileDataService: DataServiceProtocol {
             return babies.sorted(by: { $0.name < $1.name })
         } catch {
             print("Error loading all babies: \(error)")
+            return []
         }
     }
 
