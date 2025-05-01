@@ -23,9 +23,9 @@ struct GrowthChartView: View {
                 .padding()
 
                 if selectedTab == 0 {
-                    HeightChartView(data: viewModel.getWeightData())
+                    WeightChartView(data: viewModel.getWeightData())
                 } else if selectedTab == 1 {
-                    WeightChartView(data: viewModel.getHeightData())
+                    HeightChartView(data: viewModel.getHeightData())
                 } else {
                     HeadCircumferenceChartView(data: viewModel.getHeadCircumferenceData())
                 }
