@@ -9,7 +9,7 @@ import Charts
 
 struct GrowthChartView: View {
     @ObservedObject var viewModel: GrowthViewModel
-    @State private var selected = 0
+    @State private var selectedTab = 0
 
     var body: some View {
         NavigationView {

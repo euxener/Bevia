@@ -9,7 +9,7 @@ import SwiftUI
 struct GrowthFormView: View {
     @ObservedObject var viewModel: GrowthViewModel
     var mode: FormMode
-    var recordToEdit: GrowthFormView?
+    var recordToEdit: GrowthRecord?
 
     @Environment(\.presentationMode) var presentationMode
 
@@ -22,7 +22,7 @@ struct GrowthFormView: View {
     // For input validation
     @State private var weightError: String? = nil
     @State private var heightError: String? = nil
-    @State private var headCircumference: String? = nil
+    @State private var headCircumferenceError: String? = nil
 
     var body: some View {
         NavigationView {
@@ -83,7 +83,7 @@ struct GrowthFormView: View {
                     Button("Save") {
                         if validateInputs() {
                             saveRecord()
-                            presentationMode.wrappedValue.dimiss()
+                            presentationMode.wrappedValue.dismiss()
                         }
                     }
                 }
@@ -96,12 +96,12 @@ struct GrowthFormView: View {
                         weight = String(format: "%.1f", weightValue)
                     }
 
-                    if let heightValue: String = recorrd.height {
+                    if let heightValue = record.height {
                         height = String(format: "%.1f", heightValue)
                     }
 
-                    if let HeadValue = record.headCircumference {
-                        headCircumference = String(format: "%.1f", headValaue)
+                    if let headValue = record.headCircumference {
+                        headCircumference = String(format: "%.1f", headValue)
                     }
 
                     notes = record.notes ?? ""
@@ -170,7 +170,7 @@ private func saveRecord() {
     // Parse optional measurements
     let weightValue = weight.isEmpty ? nil : Double(weight)
     let heightValue = height.isEmpty ? nil : Double(height)
-    let headValue = headCircumference.isEmpty ? nil : Double(headcircumference)
+    let headValue = headCircumference.isEmpty ? nil : Double(headCircumference)
 
     switch mode {
         case .create:

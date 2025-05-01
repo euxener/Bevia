@@ -25,10 +25,10 @@ class GrowthViewModel: ObservableObject {
         errorMessage = nil
 
         // Simulate network delay
-        DispatchQueue.main.asyncAfter(deadline: now() + 0.5) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
         guard let self = self else {return}
         
-        self.growthRecords = self.dataService.loaddAllGrowthRecords(babyId: self.babyId)
+        self.growthRecords = self.dataService.loadAllGrowthRecords(babyId: self.babyId)
         self.isLoading = false
 
         if self.growthRecords.isEmpty {
@@ -55,7 +55,7 @@ class GrowthViewModel: ObservableObject {
     }
 
     func updateGrowthRecord(_ record: GrowthRecord) {
-        if dataService.saveGrowth(record) {
+        if dataService.saveGrowthRecord(record) {
             if let index = growthRecords.firstIndex(where: { $0.id == record.id}) {
                 growthRecords[index] = record
             }
@@ -65,7 +65,7 @@ class GrowthViewModel: ObservableObject {
     }
 
     func deleteGrowthRecord(recordId: UUID) {
-        if dataService.deleteGrowthRecord(baby.Id: babyId, recordId: recordId) {
+        if dataService.deleteGrowthRecord(babyId: babyId, recordId: recordId) {
             growthRecords.removeAll {$0.id == recordId}
         } else {
             errorMessage = "Failed to delete growth record"
@@ -77,14 +77,14 @@ class GrowthViewModel: ObservableObject {
     func getWeightData() -> [(Date, Double)] {
         return growthRecords
                 .filter {$0.weight != nil}
-                .map {$0.date, $0.weight!}
+                .map {($0.date, $0.weight!)}
                 .sorted {$0.0 < $1.0}
     }
 
     func getHeightData() -> [(Date, Double)] {
         return growthRecords
                 .filter {$0.height != nil}
-                .map {$0.date != nil}
+                .map {($0.date, $0.height!)}
                 .sorted {$0.0 < $1.0}
     }
 

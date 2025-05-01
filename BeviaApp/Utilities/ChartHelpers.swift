@@ -43,7 +43,7 @@ enum ChartHelpers {
     ]
 
     // Height-for-age percentiles (girls, 0-24 months, simplified)
-    static let heightPercentilesBoys: [String: [(age: Int, value: Double)]] = [
+    static let heightPercentilesGirls: [String: [(age: Int, value: Double)]] = [
         "p3": [(0, 45.6), (3, 57.4), (6, 63.2), (9, 67.7), (12, 71.3), (18, 77.2), (24, 82.0)],
         "p50": [(0, 49.1), (3, 60.2), (6, 65.7), (9, 70.4), (12, 74.3), (18, 80.7), (24, 86.0)],
         "p97": [(0, 52.7), (3, 63.0), (6, 68.3), (9, 73.2), (12, 77.4), (18, 84.2), (24, 90.0)]
@@ -71,15 +71,15 @@ static func getPercentileData(type: String, gender: String, ageRangeMonths: Clos
         case ("weight", "male"):
             percentileDict = weightPercentilesBoys
         case ("weight", "female"):
-            percentileDict = weightPercentileGirls
+            percentileDict = weightPercentilesGirls
         case ("height", "male"):
             percentileDict = heightPercentilesBoys
         case ("height", "female"):
-            percentileDict = heightPercentileGirls
+            percentileDict = heightPercentilesGirls
         case ("head", "male"):
             percentileDict = headPercentilesBoys
         case ("head", "female"):
-            percentileDict = headPercentileGirls
+            percentileDict = headPercentilesGirls
         default:
             return [:]
     }

@@ -7,7 +7,7 @@
 import Foundation
 
 class FileDataService: DataServiceProtocol {
-    private let dataDirectory: URL
+    internal let dataDirectory: URL
 
     init(directory: URL? = nil) {
         if let directory = directory {
@@ -101,6 +101,7 @@ class FileDataService: DataServiceProtocol {
             return true
         } catch {
             print("Error deleting baby: \(error)")
+            return false
         }
     }
 }

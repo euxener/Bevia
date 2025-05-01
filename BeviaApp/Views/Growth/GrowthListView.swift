@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct GrowthListView: View {
-    @ObservableObject var viewModel: GrowthViewModel
+    @ObservedObject var viewModel: GrowthViewModel
     @State private var showingAddRecord = false
     @State private var showingChartView = false
 
@@ -90,7 +90,7 @@ struct GrowthListView: View {
 
 struct GrowthRecordRow: View {
     let record: GrowthRecord
-    let dateFormatter: DataFormatter = {
+    let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         return formatter
