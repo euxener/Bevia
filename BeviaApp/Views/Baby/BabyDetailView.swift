@@ -67,11 +67,11 @@ struct BabyDetailView : View {
                         .padding()
                         .tag(0)
 
-                        // Growth Tab - Placeholder
-                        if let babyId = baby.id {
-                            GrowthListView(viewModel: GrowthViewModel(babyId: babyId, dataService: viewModel.dataService))
-                                .tag(1)
+                        // Growth Tab
+                        Group {
+                            GrowthListView(viewModel: GrowthViewModel(babyId: baby.id, dataService: viewModel.dataService))
                         }
+                        .tag(1)
 
                         // Milestones Tab - Placeholder
                         Text("Milestones will be shown here")

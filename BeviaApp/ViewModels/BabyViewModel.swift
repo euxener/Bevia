@@ -12,7 +12,7 @@ class BabyViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
 
-    private let dataService: DataServiceProtocol
+    internal let dataService: DataServiceProtocol
 
     init(dataService: DataServiceProtocol) {
         self.dataService = dataService
