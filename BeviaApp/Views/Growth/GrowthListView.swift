@@ -130,4 +130,3 @@ struct GrowthRecordRow: View {
         .padding(.vertical, 4)
     }
 }
-

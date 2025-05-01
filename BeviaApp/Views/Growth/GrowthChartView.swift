@@ -37,7 +37,7 @@ struct GrowthChartView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Done") {
-                        // Close the sheet
+                        // FIXME: Done button does not work yet
                     }
                 }
             }

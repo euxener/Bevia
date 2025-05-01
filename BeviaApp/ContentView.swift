@@ -17,3 +17,7 @@ struct ContentView: View {
         BabyListView(viewModel: babyViewModel)
     }
 }
+
+#Preview {
+    ContentView()
+}
