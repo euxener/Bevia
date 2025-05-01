@@ -91,10 +91,10 @@ extension FileDataService {
 
         do {
             try FileManager.default.removeItem(at: filePath)
-                return true
-            } catch {
-                print("Error deleting growth record: \(error)")
-                return false
-            }
+            return true
+        } catch {
+            print("Error deleting growth record: \(error)")
+            return false
         }
     }
+}

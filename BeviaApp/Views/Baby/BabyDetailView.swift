@@ -68,10 +68,8 @@ struct BabyDetailView: View {
                         .tag(0)
                         
                         // Growth Tab
-                        if baby.id != nil {
-                            GrowthListView(viewModel: GrowthViewModel(babyId: baby.id, dataService: viewModel.dataService))
-                                .tag(1)
-                        }
+                        GrowthListView(viewModel: GrowthViewModel(babyId: baby.id, dataService: viewModel.dataService))
+                            .tag(1)
                         
                         // Milestones Tab - Placeholder
                         Text("Milestones will be shown here")

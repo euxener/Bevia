@@ -10,6 +10,7 @@ import Charts
 struct GrowthChartView: View {
     @ObservedObject var viewModel: GrowthViewModel
     @State private var selectedTab = 0
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         NavigationView {
@@ -37,7 +38,7 @@ struct GrowthChartView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Done") {
-                        // FIXME: Done button does not work yet
+                        presentationMode.wrappedValue.dismiss()
                     }
                 }
             }
