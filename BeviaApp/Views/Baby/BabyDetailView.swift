@@ -68,9 +68,10 @@ struct BabyDetailView : View {
                         .tag(0)
 
                         // Growth Tab - Placeholder
-                        Text("Growth records will be shown here")
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .tag(1)
+                        if let babyId = baby.id {
+                            GrowthListView(viewModel: GrowthViewModel(babyId: babyId, dataService: viewModel.dataService))
+                                .tag(1)
+                        }
 
                         // Milestones Tab - Placeholder
                         Text("Milestones will be shown here")
@@ -109,7 +110,7 @@ struct BabyDetailView : View {
 
     private func formatAge(_ age: (years: Int, months: Int, days: Int)) -> String {
         if age.years > 0 {
-            return "\(age.years) year\(age.years == 1 ? "" : "s"), \(age)"
+            return "\(age.years) year\(age.years == 1 ? "" : "s"), \(age.months) month\(age.months == 1 ? "" : "s")"
         } else if age.months > 0 {
             return "\(age.months) month\(age.months == 1 ? "" : "s"), \(age.days) day\(age.days == 1 ? "" : "s")"
         } else {
@@ -142,12 +143,12 @@ struct InfoCard: View {
                     } else {
                         Text(item.1)
                             .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-                    }
+                }
+            }
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(.systemGray6))
         .cornerRadius(10)
-        }
+    }
 }

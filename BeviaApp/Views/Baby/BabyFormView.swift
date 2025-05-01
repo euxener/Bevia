@@ -37,7 +37,7 @@ struct BabyFormView: View {
                 }
 
                 Section(header: Text("Additional Information")) {
-                    TextField("Notes", text: $notes, axis .vertical)
+                    TextField("Notes", text: $notes, axis: .vertical)
                     .lineLimit(5)
                 }
             }
